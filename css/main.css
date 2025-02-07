@@ -66,23 +66,23 @@ strong {
 }
 
 #resume_link{
+    color: #F5F5F7;
     display: inline-block;
+    text-decoration: none;
 }
 
 #resume_link:hover{
     color: #f0993e;
 }
 
-#resume_link a{
-    color: #F5F5F7;
+#resume_link div{
     font-weight: 400;
-    text-decoration: none;
     margin-right: 0.5em;
 
     transition: 0.3s;
 }
 
-#resume_link a:hover{
+#resume_link div:hover{
     color: #f0993e;
     text-decoration: none;
     margin-right: 0.6em;
