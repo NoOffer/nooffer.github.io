@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;400;500;600;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;200;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;500;600;700&display=swap');
 
 html, body{
     font-family: 'Montserrat', sans-serif;
@@ -13,6 +14,7 @@ html, body{
     background-image: url("../res/img/BlackHoleBG.jpg");
     background-size: cover;
     display: flex;
+    flex-direction: row;
     flex-wrap: nowrap;
     
     /* Hide scrollbar for IE, Edge and Firefox */
@@ -135,7 +137,7 @@ strong {
     margin-bottom: 5em;
 }
 
- /* About */
+/* About */
 #about p{
     color: #B0B0B2;
     font-weight: 400;
@@ -143,7 +145,7 @@ strong {
     font-size: 1.2em;
 }
 
- /* Projects */
+/* Projects */
 #projects{
     display: flex;
     flex-direction: column;
@@ -162,7 +164,7 @@ strong {
     display: flex;
     flex-direction: row;
     margin-top: 1em;
-    border-radius: 1em;
+    border-radius: 0.5em;
     padding: 2% 0% 2% 2%;
 
     transition: 0.3s;
@@ -178,20 +180,40 @@ strong {
     margin: 0.2em 1.5em 0 0;
     border: solid 0.1em;
     border-color: #B0B0B2;
-    border-radius: 0.5em;
+    border-radius: 0.2em;
 }
 
 .proj_title{
+    position: relative;
+    display: inline-block;
+    font-family: 'Inter';
     color: #F5F5F7;
-    font-weight: 700;
-    font-size: 1.2em;
+    font-weight: 600;
+    font-size: 1.8em;
+    width: auto;
     margin: 0 0 0.5em 0;
     
     transition: 0.3s;
 }
 
+.proj_title::after {
+    content: "";
+    position: absolute;
+    left: 0.6em;
+    bottom: 0.4em;
+    width: 0;
+    height: 0.08em;
+    background-color: #F0993E;
+
+    transition: 0.3s;
+}
+
+.project:hover .proj_title::after {
+    width: 3em;
+}
+
 .project:hover .proj_title{
-    color: #f0993e;
+    color: #F0993E;
 }
 
 .proj_desc{
@@ -210,16 +232,40 @@ strong {
 
 .skill{
     display: inline;
-    color: #f0993e;
+    color: #B0B0B2;
     font-weight: 500;
-    background-color: #2D2D2F;
-    border: 0;
+    background: none;
+    border: 0.1em solid #B0B0B2;
     border-radius: 1em;
     margin-right: 0.5em;
     padding: 0.1em 0.5em 0.1em 0.5em;
     width: 5em;
 }
 
+.project:hover .skill{
+    color: #F0993E;
+    border-color: #F0993E;
+
+    transition: 0.3s;
+}
+
+@media (max-width: 85em) {
+    body{
+        flex-direction: column;
+    }
+
+    #left_column{
+        width: 100%;
+        height: 100vh;
+    }
+
+    #right_column{
+        width: 88%;
+        height: 100vh;
+    }
+}
+
+/* Language */
 #lang{
     position: absolute;
     top: 1%;
