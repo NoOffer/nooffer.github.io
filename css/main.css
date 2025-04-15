@@ -71,6 +71,9 @@ strong {
     color: #F5F5F7;
     display: inline-block;
     text-decoration: none;
+    padding-bottom: 1em;
+
+    transition: 0.3s;
 }
 
 #resume_link:hover{
