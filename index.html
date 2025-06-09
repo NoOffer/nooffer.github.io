@@ -6,11 +6,153 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nofer's Relay</title>
     <link rel="stylesheet" href="css/main.css">
-    <script src="js/main.js"></script>
+    <script src="js/main.js" defer></script>
     <script src="https://kit.fontawesome.com/b6810b08c6.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="page">
+    <div class="nav">
+        <ul>
+            <li class="nav_item active">Landing</li>
+            <li class="nav_item">Personal Projects</li>
+            <li class="nav_item">Experiences</li>
+            <li class="nav_item">Contact</li>
+        </ul>
+    </div>
+    <div id="page_container">
+        <div class="page" id="intro_page">
+            <div id="intro">
+                <p id="greeting">Hi! My name is</p>
+                <p id="name">NOFER</p>
+                <p id="who_am_i">
+                    A <strong>Computer Science</strong> student at <strong>Boston University</strong>
+                </p>
+                <a id="resume_link" href="res/pdf/Resume - Shangsong Xue - EN.pdf">
+                    <span>View Full Résumé </span>
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </a>
+            </div>
+            <div id="contacts">
+                <a href="https://github.com/NoOffer">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="www.linkedin.com/in/nofer-xue">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="mailto:nofer@bu.edu">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+                <a href="https://www.bilibili.com/video/BV1bigxe6Em5/?spm_id_from=333.999.0.0&vd_source=33b0a0dd174e2ba60b94182ebff469d3">
+                    <i class="fa-brands fa-bilibili"></i>
+                </a>
+            </div>
+        </div>
+        <!-- <div class="page">
+            <img id="lilith_game_logo" src="res/img/LilithGames.png" alt="Lilith Games logo">
+            <div id="job_exp">
+                In 2025, I worked at <strong>Lilith Games</strong> as a <strong>Technical Artist</strong> intern.
+            </div>
+        </div> -->
+        <div class="page" id="proj_page">
+            <!-- <p class="page_title">Personal Projects</p> -->
+            <div class="showcase">
+                <img src="res/img/OpenGLRenderer00.png" alt="OpenGL Renderer" class="showcase_img">
+                <div class="showcase_info_container">
+                    <p class="showcase_title">Customized Renderer</p>
+                    <p class="showcase_desc">
+                        A work-in-progress renderer. This renderer has a few prototypes, including a OpenGL renderer written in C++, and two software renderers written in Python and C++, respectively
+                    </p>
+                    <div class="skills">
+                        <div class="skill">OpenGL</div>
+                        <div class="skill">C++</div>
+                        <div class="skill">Python</div>
+                    </div>
+                </div>
+            </div>
+            <div class="showcase">
+                <img src="res/img/BlackHole00.jpg" alt="Unity Mini-Projects" class="showcase_img">
+                <div class="showcase_info_container">
+                    <p class="showcase_title">Unity Mini-Projects</p>
+                    <p class="showcase_desc">
+                        A variety of personal Unity mini-projects exploring ideas such as scriptable render pipeline, GPU-assisted mass computation, stylized/non-photorealistic rendering, ray marching, etc. 
+                    </p>
+                    <div class="skills">
+                        <div class="skill">Unity</div>
+                        <div class="skill">C#</div>
+                        <div class="skill">ShaderLab</div>
+                        <div class="skill">Blender</div>
+                    </div>
+                </div>
+            </div>
+            <div class="showcase">
+                <img src="res/img/GameJamProj.png" alt="Game Jame Projects" class="showcase_img">
+                <div class="showcase_info_container">
+                    <p class="showcase_title">
+                        Game Jam Projects
+                    </p>
+                    <p class="showcase_desc">
+                        Several games created in collaboration during 48H game jams (Global Gam Jams, GMTK Game Jams, and CiGA Game Jams) as the sole programmer and 3D modeler on the team
+                    </p>
+                    <div class="skills">
+                        <div class="skill">Unity</div>
+                        <div class="skill">C#</div>
+                        <div class="skill">HLSL</div>
+                        <div class="skill">Blender</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page" id="exp_page">
+            <!-- <p class="page_title">Experiences</p> -->
+            <div class="showcase">
+                <img src="res/img/LilithGames.png" alt="Lilith Games Logo" class="showcase_img">
+                <div class="showcase_info_container">
+                    <p class="showcase_title">Technical Artist Intern <strong>at Lilith Games</strong></p>
+                    <p class="showcase_desc">
+                        In 2025, I worked at Lilith Games as a Technical Artist intern. At the job, I
+                    </p>
+                    <ul class="showcase_desc">
+                        <li>Created development tools for one of the major titles</li>
+                        <li>Wrote shaders and scripts for various visual effects</li>
+                        <li>Debugged critical issues in the project render pipeline</li>
+                    </ul>
+                    <div class="skills">
+                        <div class="skill">Tool Dev</div>
+                        <div class="skill">Debugging</div>
+                        <div class="skill">Unity</div>
+                        <div class="skill">Render Pipeline</div>
+                    </div>
+                </div>
+            </div>
+            <div class="showcase">
+                <img src="res/img/CWRULogo.png" alt="CWRU Logo" class="showcase_img">
+                <div class="showcase_info_container">
+                    <p class="showcase_title">Lead Programmer <strong>at the David's Challenge Dev Team</strong></p>
+                    <p class="showcase_desc">
+                        Starting 2022, I worked at the educational game development team as the Lead Programmer for 2 years. During this time, I
+                    </p>
+                    <ul class="showcase_desc">
+                        <li>Implemented and maintained several core gameplay mechanisms</li>
+                        <li>Spearheaded early-stage design and prototyping with other founding members</li>
+                        <li>Assessed applicants during team expansion & helped onboard 3 new members</li>
+                    </ul>
+                    <div class="skills">
+                        <div class="skill">Team Management</div>
+                        <div class="skill">Prototyping</div>
+                        <div class="skill">Collaboration</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page" id="contact_page">
+            <p id="shall_we">Shall<br>We ?</p>
+            <p class="availability">
+                I'm currently seeking developer positions in the game industry, especially <strong>Technical Artist</strong>, <strong>Graphics Programmer</strong>, and <strong>Engine Developer</strong>.
+            </p>
+            <p class="availability">
+                I'm open to positions in <strong>NA</strong> and <strong>EU</strong>.<sup>*</sup>
+            </p>
+            <p id="sponsorship_disclaimer"><sup>*</sup> Visa sponsorship may be required depending on the location</p>
+        </div>
     </div>
 
     <script>
