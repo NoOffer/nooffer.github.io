@@ -8,13 +8,21 @@ pages.forEach((page, i) => {
 });
 setTimeout(() => {
   pages.forEach((page, _) => {
-    page.style.transition = 'transform 0.5s ease';
+    page.style.visibility = 'visible';
+    page.style.transition = 'transform 0.8s ease';
   });
-}, 20);
+}, 50);
 
 navItems.forEach((item, i) => {
   item.addEventListener('click', () => { scrollToPage(i); });
 });
+
+// Ease-in
+setTimeout(() => {
+  document.getElementById('nav').classList.toggle('loaded', true);
+  document.getElementById('intro').classList.toggle('loaded', true);
+  document.getElementById('contacts').classList.toggle('loaded', true);
+}, 200);
 
 // State
 let currPageIdx = 0;
