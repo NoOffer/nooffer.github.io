@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&family=Inter:opsz@14..32&display=swap');
@@ -87,6 +87,46 @@ strong {
 .nav_item.active {
 	color: var(--soft-black);
 	font-weight: 400;
+}
+
+/* Language options */
+#lang_option {
+	position: absolute;
+	right: 0;
+	display: flex;
+	flex-direction: row;
+	white-space: pre;
+	color: var(--grey);
+	font-family: 'Noto';
+	font-size: 1em;
+	font-weight: 300;
+	text-align: right;
+	text-decoration: none;
+	margin: 0.8em 0 0 0;
+
+	z-index: 10;
+}
+
+#lang_option p {
+	margin: 0;
+
+	transition: 0.2s;
+}
+
+#lang_option #en_option {
+	font-weight: 500;
+}
+
+/* #lang_option #zh_option {
+	font-weight: 300;
+} */
+
+#lang_option:hover #en_option {
+	font-weight: 300;
+}
+
+#lang_option:hover #zh_option {
+	font-weight: 500;
 }
 
 /* Page */
@@ -321,6 +361,7 @@ strong {
 }
 
 #shall_we {
+	white-space: pre;
 	font-size: 3.5em;
 	font-weight: 900;
 	line-height: 1.2em;
