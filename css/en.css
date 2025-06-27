@@ -261,6 +261,7 @@ strong {
 	height: 25vh;
 	display: flex;
 	flex-direction: row;
+	color: var(--black);
 }
 
 .showcase_img {
@@ -312,8 +313,8 @@ strong {
 .skills{
   display: inline-block;
   width: 100%;
-  margin: 0.2em 0 0 0;
-  padding-left: 0.1em;
+  margin: 0;
+  /* padding-left: 0.1em; */
 }
 
 .skill{
