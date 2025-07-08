@@ -97,7 +97,7 @@ strong {
 	flex-direction: row;
 	white-space: pre;
 	color: var(--grey);
-	font-family: 'Noto';
+	font-family: 'Noto Sans SC';
 	font-size: 1em;
 	font-weight: 300;
 	text-align: right;
