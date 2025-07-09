@@ -103,6 +103,7 @@ strong {
 	text-align: right;
 	text-decoration: none;
 	margin: 0.8em 0 0 0;
+	outline: none;
 
 	z-index: 10;
 }
@@ -257,16 +258,17 @@ strong {
 
 .showcase {
 	position: relative;
+	color: var(--black);
 	width: 80vw;
 	height: 25vh;
+	outline: none;
 	display: flex;
 	flex-direction: row;
-	color: var(--black);
 }
 
 .showcase_img {
 	position: absolute;
-	width: 14vw;
+	width: 15vw;
 	height: auto;
 	left: 0;
 	padding-top: 0.2em;
@@ -275,7 +277,7 @@ strong {
 .showcase_info_container {
 	position: absolute;
 	width: 60vw;
-	left: 15vw;
+	left: 18vw;
 	top: 0;
 }
 
@@ -304,7 +306,7 @@ strong {
 }
 
 .showcase_desc {
-	margin: 0.5em 0 0 0.05em;
+	margin: 0.2em 0 0 0.1em;
 	font-size: 0.7em;
 	font-weight: 250;
 	line-height: 1.5em;
