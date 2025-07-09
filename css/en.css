@@ -250,7 +250,7 @@ strong {
 
 /* Page 2 */
 #proj_page {
-	padding-top: 16vh;
+	padding-top: 8vh;
 	padding-left: 10vw;
 	display: flex;
 	flex-direction: column;
@@ -259,8 +259,8 @@ strong {
 .showcase {
 	position: relative;
 	color: var(--black);
-	width: 80vw;
-	height: 25vh;
+	width: 75vw;
+	height: 22vh;
 	outline: none;
 	display: flex;
 	flex-direction: row;
@@ -276,7 +276,7 @@ strong {
 
 .showcase_info_container {
 	position: absolute;
-	width: 60vw;
+	width: 55vw;
 	left: 18vw;
 	top: 0;
 }
@@ -290,19 +290,19 @@ strong {
 }
 
 .showcase_title::after {
-  content: "";
-  position: absolute;
-  left: 0.1em;
-  top: 1.6em;
-  width: 0;
-  height: 0.05em;
-  background-color: var(--black);
+	content: "";
+	position: absolute;
+	left: 0.1em;
+	top: 1.6em;
+	width: 0;
+	height: 0.05em;
+	background-color: var(--black);
 
-  transition: 0.3s;
+	transition: 0.3s;
 }
 
 .showcase:hover .showcase_title::after {
-  width: 4.5em;
+  	width: 4.5em;
 }
 
 .showcase_desc {
@@ -313,10 +313,10 @@ strong {
 }
 
 .skills{
-  display: inline-block;
-  width: 100%;
-  margin: 0;
-  /* padding-left: 0.1em; */
+	display: inline-block;
+	width: 100%;
+	margin: 0;
+	/* padding-left: 0.1em; */
 }
 
 .skill{
