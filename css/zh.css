@@ -55,6 +55,12 @@ strong {
 	z-index: 10;
 }
 
+@media (max-width: 768px /* Common mobile resolution breakpoint */) {
+  #nav {
+    visibility: hidden;
+  }
+}
+
 #nav.loaded {
 	right: 3em;
 	
