@@ -87,6 +87,8 @@ html, body {
 #page_selection li i {
 	color: var(--white);
 	cursor: pointer;
+
+	transition: 0.3s;
 }
 
 /* Showcase */
@@ -100,12 +102,14 @@ html, body {
 	
 	z-index: 0;
 
-	transition: width 0.8s, left 0.8s;
+	transition: width 0.8s;
 }
 
 .showcase.next {
 	width: 0;
 	right: 0;
+
+	transition: none;
 }
 
 .showcase_desc {
@@ -119,6 +123,12 @@ html, body {
 	opacity: 90%;
 
 	z-index: 10;
+
+	transition: 0.3s;
+}
+
+.showcase_desc.next {
+	opacity: 0%;
 }
 
 .showcase_desc h1 {
