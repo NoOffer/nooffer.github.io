@@ -15,6 +15,10 @@ showcases.forEach((page, i) => {
 	page.style.zIndex = `${i === currPage ? 2 : 0}`;
 });
 
+descriptions.forEach((item, i) => {
+	item.classList.toggle('next', i > 0);
+});
+
 function flipToPage(index) {
 	if (index === currPage || isFlipping) return;
 
