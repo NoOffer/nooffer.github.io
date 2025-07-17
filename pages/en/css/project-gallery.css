@@ -129,15 +129,39 @@ html, body {
 
 .showcase_desc.next {
 	opacity: 0%;
+
+	z-index: 9;
 }
 
 .showcase_desc h1 {
 	position: relative;
 	width: 20rem;
-	margin: 1.5rem 0 2rem 0;
+	margin: 1.5rem 0 1rem 0;
 	left: 2rem;
 	font-size: 2.5rem;
 	font-weight: 750;
+}
+
+
+.skills{
+	position: relative;
+	display: inline-block;
+	width: 20rem;
+	margin: 0 0 1rem 0;
+	left: 1.9rem;
+}
+
+.skill{
+	display: inline;
+	font-size: 1em;
+	font-weight: 300;
+	background: none;
+	border: 0.1em solid var(--grey);
+	border-radius: 1em;
+	margin-right: 0.5em;
+	padding: 0.1em 0.5em 0.1em 0.5em;
+
+	transition: 0.1s;
 }
 
 .showcase_desc p {
@@ -148,4 +172,35 @@ html, body {
 	font-size: 1.1rem;
 	font-weight: 200;
 	line-height: 2rem;
+}
+
+.showcase_desc a {
+	position: absolute;
+	margin: 0;
+	right: 3rem;
+	bottom: 2rem;
+	text-decoration: none;
+	color: var(--black);
+	font-size: 1.1rem;
+	font-weight: 300;
+
+	white-space: pre-wrap;
+
+	cursor: pointer;
+
+	transition: 0.3s;
+}
+
+.showcase_desc a:hover {
+	font-weight: 500;
+}
+
+.showcase_desc a i {
+	margin: 0 0 0 0.7rem;
+
+	transition: 0.3s;
+}
+
+.showcase_desc a:hover i {
+	margin: 0 0 0 0.9rem;
 }

@@ -1,0 +1,78 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&family=Inter:opsz@14..32&display=swap');
+
+:root {
+	--white: #F5F5F7;
+	--soft-white: #EDEDEF;
+	--black: #1D1D1F;
+	--soft-black: #272729;
+	--highlight: #F0993E;
+	--grey: #4D4D4F;
+	--light-grey: #A5A5A7;
+}
+
+html, body {
+	font-family: 'Roboto';
+	color: var(--black);
+	margin: 0;
+    padding: 0;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	bottom: 0;
+	background-color: var(--white);
+	background-size: cover;
+	overflow: hidden; /* Disable regular scroll */
+	
+	cursor: default;
+	
+	/* Hide scrollbar for IE, Edge and Firefox */
+	-ms-overflow-style: none;  /* IE and Edge */
+	scrollbar-width: none;     /* Firefox */
+}
+
+body {
+	padding: 8rem 15vw 0 15vw;
+}
+
+/* Back button */
+#back_btn {
+	position: absolute;
+	top: 2rem;
+	left: 2.5rem;
+	width: 3.5rem;
+	height: 3.5rem;
+	text-decoration: none;
+	color: var(--black);
+	background: var(--white);
+
+	z-index: 10;
+
+	transition: 0.3s;
+}
+
+#back_btn:hover {
+	left: 0rem;
+	width: 6rem;
+}
+
+#back_btn i {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	font-size: 1.5rem;
+
+	transition: 0.3s;
+}
+
+#back_btn:hover i {
+	right: 1.5rem;
+}
+
+#page_title {
+	font-size: 3rem;
+	font-weight: 800;
+	margin: 0;
+}
