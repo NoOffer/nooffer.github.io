@@ -34,7 +34,7 @@ html, body {
 }
 
 body {
-	padding: 8rem 15vw 0 15vw;
+	padding: 8rem 15vw 8rem 15vw;
 }
 
 /* Back button */
@@ -71,8 +71,66 @@ body {
 	right: 1.5rem;
 }
 
-#page_title {
+/* Title */
+#title_bar {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+	padding: 0 0 0.8rem 0;
+	border-bottom: 0.1rem solid var(--grey);
+	margin: 0 0 1.5rem 0;
+	width: 70vw;
+}
+
+#title_bar h1 {
 	font-size: 3rem;
 	font-weight: 800;
-	margin: 0;
+	margin: 0 2.5rem 0 0;
+}
+
+#title_bar h2 {
+	font-size: 1.5rem;
+	font-weight: 250;
+	margin: 0 0 0.5rem 0;
+}
+
+/* .skills {
+	position: relative;
+	display: inline-block;
+	margin: 1.5rem 0 2rem 0;
+}
+
+.skill {
+	display: inline;
+	font-size: 1em;
+	font-weight: 300;
+	color: var(--grey);
+	background: none;
+	border: 0.1rem solid var(--grey);
+	border-radius: 1em;
+	margin-right: 0.5em;
+	padding: 0.1em 0.5em 0.1em 0.5em;
+
+	transition: 0.1s;
+} */
+
+/* Body */
+#page_content_body {
+	display: flex;
+	flex-direction: column;
+	width: 70vw;
+}
+
+#page_content_body p {
+	width: 70vw;
+	font-size: 1.2rem;
+	font-weight: 300;
+	line-height: 2rem;
+}
+
+.img_centered_large {
+	width: 100%;
+	height: auto;
+	margin: 1rem 0 1.5rem 0;
 }
