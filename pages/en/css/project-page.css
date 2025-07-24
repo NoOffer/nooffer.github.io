@@ -38,7 +38,8 @@ body {
 }
 
 ::-webkit-scrollbar {
-   	width: 0.5rem;  /* vertical scrollbar width */
+   	width: 0.5rem;  /* Vertical scrollbar */
+   	height: 0;      /* Horizontal scrollbar */
 }
 
 ::-webkit-scrollbar-thumb {
@@ -146,4 +147,23 @@ body {
 	width: 100%;
 	height: auto;
 	margin: 1rem 0 1.5rem 0;
+}
+
+#download {
+	margin: 1rem 0 1rem 0;
+	text-decoration: none;
+	color: var(--black);
+	font-weight: 500;
+
+	transition: 0.3s;
+}
+
+#download i {
+	margin: 0 0 0 0.1rem;
+	
+	transition: 0.3s;
+}
+
+#download:hover i {
+	margin: 0 0 0 0.3rem;
 }
