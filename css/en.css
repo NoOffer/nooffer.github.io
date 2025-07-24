@@ -326,22 +326,22 @@ strong {
 }
 
 .skill{
-  display: inline;
+	display: inline;
 	font-size: 0.5em;
-  font-weight: 300;
-  background: none;
-  border: 0.1em solid var(--soft-black);
-  border-radius: 1em;
-  margin-right: 0.5em;
-  padding: 0.1em 0.5em 0.1em 0.5em;
+	font-weight: 300;
+	background: none;
+	border: 0.05rem solid var(--soft-black);
+	border-radius: 1em;
+	margin-right: 0.5em;
+	padding: 0.1em 0.5em 0.1em 0.5em;
 
-  transition: 0.1s;
+	transition: 0.1s;
 }
 
 .showcase:hover .skill{
 	color: var(--white);
-  font-weight: 400;
-  background: var(--soft-black);
+	font-weight: 400;
+	background: var(--soft-black);
 }
 
 /* Page 3 */
