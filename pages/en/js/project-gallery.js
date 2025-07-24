@@ -19,7 +19,13 @@ descriptions.forEach((item, i) => {
 	item.classList.toggle('next', i > 0);
 });
 
-function flipToPage(index) {
+document.getElementById('next_tip').addEventListener('click', () => { flipToNext(); });
+
+function flipToNext() {
+	flipToPage(currPage + 1);
+}
+
+function flipToPage(index) {	
 	if (index === currPage || isFlipping) return;
 
 	if (index < 0){

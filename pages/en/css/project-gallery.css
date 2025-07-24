@@ -91,6 +91,38 @@ html, body {
 	transition: 0.3s;
 }
 
+/* Scroll tip */
+#next_tip {
+	position: absolute;
+	top: 3rem;
+	right: 0.9rem;
+	font-size: 1.4rem;
+	font-weight: 400;
+	writing-mode: vertical-rl;
+	color: var(--white);
+
+	cursor: pointer;
+	
+	z-index: 10;
+}
+
+#next_tip i {
+	margin: 0 0 0.6rem 0;
+}
+
+#vertical_line {
+	position: absolute;
+	top: 9rem;
+	bottom: 25rem;
+	right: 3rem;
+	width: 0.1rem;
+	height: auto;
+	background-color: var(--white);
+	opacity: 90%;
+
+	z-index: 10;
+}
+
 /* Showcase */
 .showcase {
 	position: absolute;
@@ -119,7 +151,6 @@ html, body {
 	bottom: 3rem;
 	right: 3rem;
 	background-color: var(--white);
-
 	opacity: 90%;
 
 	z-index: 10;
