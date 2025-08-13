@@ -19,10 +19,11 @@ descriptions.forEach((item, i) => {
 	item.classList.toggle('next', i > 0);
 });
 
-document.getElementById('next_tip').addEventListener('click', () => { flipToNext(); });
+document.getElementById('prev_page').addEventListener('click', () => { flip(-1); });
+document.getElementById('next_page').addEventListener('click', () => { flip(1); });
 
-function flipToNext() {
-	flipToPage(currPage + 1);
+function flip(offset) {
+	flipToPage(currPage + offset);
 }
 
 function flipToPage(index) {	
