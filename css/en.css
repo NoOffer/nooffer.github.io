@@ -289,7 +289,6 @@ strong {
 
 .showcase_title {
 	margin: 0;
-	padding-bottom: 0.25em;
 	font-family: 'Noto Sans SC';
 	font-size: 0.8em;
 	font-weight: 600;
@@ -299,9 +298,9 @@ strong {
 	content: "";
 	position: absolute;
 	left: 0.1em;
-	top: 1.6em;
+	top: 2.4rem;
 	width: 0;
-	height: 0.05em;
+	height: 0.075rem;
 	background-color: var(--black);
 
 	transition: 0.3s;
@@ -312,8 +311,8 @@ strong {
 }
 
 .showcase_desc {
-	margin: 0.2em 0 0 0.1em;
-	font-size: 0.7em;
+	margin: 0.5rem 0 0 0.1rem;
+	font-size: 1.2rem;
 	font-weight: 250;
 	line-height: 1.5em;
 }
@@ -354,11 +353,16 @@ strong {
 
 #exp_page .showcase {
 	height: 42vh;
+	margin: 0 0 0.8rem 0;
 }
 
 #exp_page .showcase_info_container {
-	width: 58vw;
-	left: 16vw;
+	width: 56vw;
+	left: 15vw;
+}
+
+#exp_page .showcase_desc {
+	font-size: 1.2rem;
 }
 
 #exp_page .showcase_img {
