@@ -4,68 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unity Projects</title>
-    <link rel="stylesheet" href="./css/unity-projects.css">
-    <!-- <script src="js/main.js" defer></script> -->
+    <title>Unity Mini Projects</title>
+    <link rel="stylesheet" href="./css/project-gallery.css">
+    <script src="./js/project-gallery.js" defer></script>
     <script src="https://kit.fontawesome.com/b6810b08c6.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div id="top_bar">
-        <a href="../../index.html">
-            <i class="fa-solid fa-arrow-left-long"></i>
-        </a>
-        <h1>Project Gallery</h1>
-    </div>
-    <div id="entry_grid">
-        <a class="project_entry">
-            <img src="../../res/img/BlackHole00.jpg" alt="Unity Mini-Projects" class="showcase_img">
-            <h1>Unity<br>Mini-Projects</h1>
-            <p>
-                Several work-in-progress customized renderer
-            </p>
-        </a>
-        <a class="project_entry">
-            <img src="../../res/img/BlackHole00.jpg" alt="Unity Mini-Projects" class="showcase_img">
-            <h1>Unity<br>Mini-Projects</h1>
-            <p>
-                Several work-in-progress customized renderer
-            </p>
-        </a>
-        <a class="project_entry">
-            <img src="../../res/img/BlackHole00.jpg" alt="Unity Mini-Projects" class="showcase_img">
-            <h1>Unity<br>Mini-Projects</h1>
-            <p>
-                Several work-in-progress customized renderer
-            </p>
-        </a>
-        <a class="project_entry">
-            <img src="../../res/img/BlackHole00.jpg" alt="Unity Mini-Projects" class="showcase_img">
-            <h1>Unity<br>Mini-Projects</h1>
-            <p>
-                Several work-in-progress customized renderer
-            </p>
-        </a>
-        <a class="project_entry">
-            <img src="../../res/img/BlackHole00.jpg" alt="Unity Mini-Projects" class="showcase_img">
-            <h1>Unity<br>Mini-Projects</h1>
-            <p>
-                Several work-in-progress customized renderer
-            </p>
-        </a>
-        <a class="project_entry">
-            <img src="../../res/img/BlackHole00.jpg" alt="Unity Mini-Projects" class="showcase_img">
-            <h1>Unity<br>Mini-Projects</h1>
-            <p>
-                Several work-in-progress customized renderer
-            </p>
-        </a>
-        <a class="project_entry">
-            <img src="../../res/img/BlackHole00.jpg" alt="Unity Mini-Projects" class="showcase_img">
-            <h1>Unity<br>Mini-Projects</h1>
-            <p>
-                Several work-in-progress customized renderer
-            </p>
-        </a>
+    <a id="back_btn" href="../../index.html">
+        <i class="fa-solid fa-arrow-left-long"></i>
+    </a>
+    <ul id="page_selection">
+        <i id="prev_page" class="fa-solid fa-chevron-left"></i>
+        <li><i class="fa-solid fa-circle"></i></li>
+        <!-- <li><i class="fa-regular fa-circle"></i></li> -->
+        <i id="next_page" class="fa-solid fa-chevron-right"></i>
+    </ul>
+
+    <p id="next_tip"><i class="fa-solid fa-caret-right"></i>Scroll</p>
+    <div id="vertical_line"></div>
+    
+    <img class="showcase" src="../../res/img/BlackHoleBG.jpg" alt="">
+    <div class="showcase_desc">
+        <h1>Black Hole VFX</h1>
+        <div class="skills">
+            <div class="skill">Unity</div>
+            <div class="skill">ShaderLab</div>
+            <div class="skill">Algorithm</div>
+        </div>
+        <p>A special effect to experiment on SDF and ray marching</p>
+        <p>This is rendered without any mesh</p>
+        <!-- <a href="./detail-pages/dice-valley.html">More<i class="fa-solid fa-arrow-right-long"></i></a> -->
     </div>
 </body>
 </html>
