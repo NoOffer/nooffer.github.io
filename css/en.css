@@ -1,6 +1,6 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&family=Inter:opsz@14..32&display=swap');
 
 :root {
@@ -9,11 +9,12 @@
 	--black: #1D1D1F;
 	--soft-black: #272729;
 	--highlight: #F0993E;
-	--grey: #4D4D4F;
+	--grey: #8D8D8F;
 }
 
 html, body {
-	font-family: 'Roboto';
+	font-family: "Roboto";
+	/* font-family: "Noto Sans", sans-serif; */
 	color: var(--black);
 	margin: 0;
 	width: 100%;
@@ -202,7 +203,7 @@ strong {
 	margin: 0;
 	padding-left: 0.2em;
 	font-size: 0.8em;
-	font-weight: 200;
+	font-weight: 300;
 }
 
 #resume_link{
@@ -254,7 +255,162 @@ strong {
 	color: var(--grey);
 }
 
+.skills{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+	margin: 0.8rem 0 0 0;
+	/* padding-left: 0.1em; */
+}
+
+.skill{
+	display: inline;
+	font-size: 0.9rem;
+	font-weight: 300;
+	background: none;
+	border: 0.05rem solid var(--soft-black);
+	border-radius: 1rem;
+	margin-right: 0.5em;
+	padding: 0.1rem 0.5rem 0.1rem 0.5rem;
+
+	transition: 0.1s;
+}
+
 /* Page 2 */
+#skill_page {
+	text-align: left;
+	padding: 10vh 0 5vh 10vw;
+}
+
+#skill_page h1 {
+	font-size: 3rem;
+	font-weight: 600;
+	margin: 0 0 3rem 0;
+}
+
+#skill_page h2 {
+	font-size: 1.3rem;
+	font-weight: 250;
+	width: 70vw;
+	margin: 0 0 2.2rem 0;
+}
+
+#skill_grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-columns: repeat(auto, 1fr);
+	gap: 2rem;
+	width: calc(90vw - 20rem);
+	height: 60%;
+}
+
+.skill_card {
+	background-color: var(--white);
+	border: solid 0.5px var(--grey);
+	border-radius: 1rem;
+	padding: 1.5rem;
+	text-align: left;
+
+	transition: 0.3s;
+}
+
+.skill_card:hover {
+	background-color: var(--soft-black);
+	/* border-color: var(--soft-black); */
+	border: 0;
+}
+
+.skill_title {
+	display: flex;
+	flex-direction: row;
+	margin: 0 0 3rem 0;
+}
+
+.skill_title i {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 2.5rem;
+	height: 2.5rem;
+	color: var(--white);
+	background-color: var(--soft-black);
+	font-size: 1.2rem;
+	border-radius: 0.4rem;
+	margin: 0 1rem 0 0;
+}
+
+.skill_card h3 {
+	font-size: 1.8rem;
+	font-weight: 500;
+	margin: 0;
+
+	transition: 0.3s;
+}
+
+.skill_card:hover h3 {
+	color: var(--white);
+}
+
+.skill_card .skill {
+	font-size: 1.1rem;
+	border-color: var(--grey);
+	margin: 0 0.8rem 1rem 0;
+}
+
+.skill_card:hover .skill {
+	color: var(--white);
+	font-weight: 400;
+	background: var(--soft-black);
+}
+
+/* Page 3 */
+#exp_page {
+	padding-top: 12.5vh;
+	padding-left: 10vw;
+	display: flex;
+	flex-direction: column;
+}
+
+#exp_page .showcase {
+	height: 42vh;
+	margin: 0 0 0.8rem 0;
+}
+
+#exp_page .showcase_info_container {
+	width: 56vw;
+	left: 15vw;
+}
+
+#exp_page .showcase_desc {
+	font-size: 1.1rem;
+	line-height: 1.4rem;
+}
+
+@media (min-height: 1000px) and (min-width: 1700px) {
+	#exp_page .showcase_desc {
+		font-size: 1.5rem;
+		line-height: 1.8rem;
+	}
+}
+
+@media (min-height: 1020px) and (min-width: 1980px) {
+	#exp_page .showcase_desc {
+		font-size: 1.75rem;
+		line-height: 2.2rem;
+	}
+}
+
+#exp_page .showcase_desc li {
+	margin: 0 0 0.4rem 0;
+}
+
+#exp_page .showcase_img {
+	width: 12vw;
+	padding-top: 0;
+}
+
+/* Page 4 */
 #proj_page {
 	padding-top: 8vh;
 	padding-left: 12vw;
@@ -265,7 +421,7 @@ strong {
 .showcase {
 	position: relative;
 	color: var(--black);
-	width: 75vw;
+	width: 70vw;
 	height: 22vh;
 	outline: none;
 	display: flex;
@@ -282,7 +438,7 @@ strong {
 
 .showcase_info_container {
 	position: absolute;
-	width: 55vw;
+	width: 50vw;
 	left: 18vw;
 	top: 0;
 }
@@ -314,27 +470,14 @@ strong {
 	margin: 0.5rem 0 0 0.1rem;
 	font-size: 1.2rem;
 	font-weight: 250;
-	line-height: 1.5em;
+	line-height: 1.4rem;
 }
 
-.skills{
-	display: inline-block;
-	width: 100%;
-	margin: 0;
-	/* padding-left: 0.1em; */
-}
-
-.skill{
-	display: inline;
-	font-size: 0.5em;
-	font-weight: 300;
-	background: none;
-	border: 0.05rem solid var(--soft-black);
-	border-radius: 1em;
-	margin-right: 0.5em;
-	padding: 0.1em 0.5em 0.1em 0.5em;
-
-	transition: 0.1s;
+@media (min-height: 1120px) {
+	.showcase_desc {
+		font-size: 1.6rem;
+		line-height: 1.8rem;
+	}
 }
 
 .showcase:hover .skill{
@@ -343,34 +486,7 @@ strong {
 	background: var(--soft-black);
 }
 
-/* Page 3 */
-#exp_page {
-	padding-top: 12.5vh;
-	padding-left: 10vw;
-	display: flex;
-	flex-direction: column;
-}
-
-#exp_page .showcase {
-	height: 42vh;
-	margin: 0 0 0.8rem 0;
-}
-
-#exp_page .showcase_info_container {
-	width: 56vw;
-	left: 15vw;
-}
-
-#exp_page .showcase_desc {
-	font-size: 1.2rem;
-}
-
-#exp_page .showcase_img {
-	width: 12vw;
-	padding-top: 0;
-}
-
-/* Page 4 */
+/* Page 5 */
 #contact_page {
 	padding-top: 12vh;
 	padding-left: 10vw;
