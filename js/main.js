@@ -18,10 +18,13 @@ navItems.forEach((item, i) => {
 });
 
 // Ease-in
-setTimeout(() => {
+setTimeout(() => {    
+  pages.forEach((page, i) => {
+    page.classList.toggle('current', i === 0)
+  });
   document.getElementById('nav').classList.toggle('loaded', true);
-  document.getElementById('intro').classList.toggle('loaded', true);
-  document.getElementById('contacts').classList.toggle('loaded', true);
+  // document.getElementById('intro').classList.toggle('loaded', true);
+  // document.querySelector('#intro_page .contacts').classList.toggle('loaded', true);
 }, 200);
 
 // State
@@ -39,6 +42,10 @@ function scrollToPage(index) {
     // Move each page up or down depending on its position
     page.style.transform = `translateY(${(i - index) * 100}vh)`;
   });
+
+  pages.forEach((page, i) => {
+    page.classList.toggle('current', i === currPageIdx)
+  });
   
   navItems.forEach((item, i) => {
     item.classList.toggle('active', i === index);
@@ -49,6 +56,14 @@ function scrollToPage(index) {
     currPageIdx = index;
     isScrolling = false;
   }, 300);
+
+  setTimeout(() => {
+    pages.forEach((page, i) => {
+      if (i === index) {
+        page.classList.toggle('current', true)
+      }
+    });
+  }, 400);
 }
 
 // Event callback
