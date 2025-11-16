@@ -51,6 +51,10 @@ body {
   background: transparent;  /* the track background */
 }
 
+a {
+	color: var(--black);
+}
+
 /* Back button */
 #back_btn {
 	position: absolute;
